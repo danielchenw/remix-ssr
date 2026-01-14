@@ -1,0 +1,36 @@
+{
+  "name": "remix-ssr",
+  "version": "1.0.0",
+  "description": "学习 remix ssr 相关项目",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "remix vite:build",
+    "start": "npm run build && cross-env SERVER_PORT=4200 node ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielchenw/remix-ssr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielchenw/remix-ssr/issues"
+  },
+  "homepage": "https://github.com/danielchenw/remix-ssr#readme",
+  "dependencies": {
+    "@remix-run/express": "^2.17.4",
+    "@remix-run/node": "^2.17.4",
+    "@remix-run/react": "^2.17.4",
+    "express": "^4.22.1",
+    "isbot": "^4.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.17.4",
+    "cross-env": "^10.1.0",
+    "vite": "^6.4.1"
+  }
+}
